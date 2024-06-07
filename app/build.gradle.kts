@@ -44,6 +44,25 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    sourceSets["main"].java.srcDir(
+        arrayOf(
+            "src/main-okhttp/java",
+            "src/main-RxJava/java",
+            "src/main-Canvas/java",
+            "src/main-Matrix/java",
+            "src/main-MVVM/java",
+        )
+    )
+    sourceSets["main"].res.srcDir(
+        arrayOf(
+            "src/main-okhttp/res",
+            "src/main-RxJava/res",
+            "src/main-Canvas/res",
+            "src/main-Matrix/res",
+            "src/main-MVVM/res",
+        )
+    )
 }
 
 dependencies {
@@ -56,6 +75,10 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(platform(libs.okhttp.bom))
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
