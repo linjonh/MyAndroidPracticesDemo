@@ -186,9 +186,9 @@ class OKHttpTest : IMethodDefine {
             .setType(MultipartBody.FORM)
             .addFormDataPart("title", "Square Logo")
             .addFormDataPart(
-                "image", "logo-square.png",
+                "image", "th.webp",
                 // TODO: file replace
-                File("docs/images/logo-square.png").asRequestBody(MEDIA_TYPE_PNG)
+                File("th.webp").asRequestBody(MEDIA_TYPE_PNG)
             )
             .build()
 
@@ -230,12 +230,12 @@ class OKHttpTest : IMethodDefine {
      * these examples, please request your own client ID! https://api.imgur.com/oauth2
      */
     private val IMGUR_CLIENT_ID = "9199fdef135c122"
-    private val MEDIA_TYPE_PNG = "image/png".toMediaType()
+    private val MEDIA_TYPE_PNG = "image/webp".toMediaType()
 }
 
 
 @MustBeDocumented
-@Retention(AnnotationRetention.SOURCE)
+@Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER)
 annotation class MyTestMark
 

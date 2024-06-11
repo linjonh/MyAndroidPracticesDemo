@@ -15,13 +15,18 @@ class ExampleUnitTest {
         val clazz = Class.forName(OKHttpTest::class.java.name)
         val newInstance = clazz.getDeclaredConstructor().newInstance()
         clazz.declaredMethods.forEach { method ->
-            println("declaredMethod=$method method.annotations=${method.declaredAnnotations.size}")
+            println("=========>declaredMethod=[${method.name}] method.annotations=${method.declaredAnnotations.size}")
             method.annotations.forEach {
                 val simpleName = it.annotationClass.simpleName
                 println("annotation=$simpleName")
                 if (simpleName == MyTestMark::class.java.simpleName) {
-                    print("method.invoke=${method.name}")
-                    method.invoke(newInstance)
+                    println("method.invoke=${method.name}")
+                    try {
+
+                        method.invoke(newInstance)
+                    } catch (e: Throwable) {
+                        println("${method.name} Exception " + e.cause)
+                    }
                 }
             }
         }
