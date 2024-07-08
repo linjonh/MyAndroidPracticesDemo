@@ -52,6 +52,7 @@ android {
             "src/main-Canvas/java",
             "src/main-Matrix/java",
             "src/main-MVVM/java",
+            "src/main-Accessibility/java",
         )
     )
     sourceSets["main"].res.srcDir(
@@ -61,6 +62,7 @@ android {
             "src/main-Canvas/res",
             "src/main-Matrix/res",
             "src/main-MVVM/res",
+            "src/main-Accessibility/res",
         )
     )
 }
@@ -76,8 +78,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(platform(libs.okhttp.bom))
-    implementation("com.squareup.okhttp3:okhttp")
-    implementation("com.squareup.okhttp3:logging-interceptor")
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging.interceptor)
+    implementation(libs.retrofit)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
