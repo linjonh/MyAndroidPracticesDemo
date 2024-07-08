@@ -19,7 +19,6 @@ import okhttp3.Route
 import okhttp3.logging.HttpLoggingInterceptor
 import okio.BufferedSink
 import okio.IOException
-import org.jetbrains.annotations.TestOnly
 import java.io.File
 import java.util.concurrent.TimeUnit
 
@@ -121,11 +120,18 @@ class OKHttpTest : IMethodDefine {
             })
     }
 
+    /**
+     * 传输一段markDown格式的字符串
+     */
     @MyTestMark
     override fun postACharString() {
         val request = postRequest(PostUrl)
         synchronousCall(request)
     }
+
+    /**
+     * 传输一个数据流
+     */
     @MyTestMark
     override fun postStreaming() {
         val requestBody: RequestBody = object : RequestBody() {
@@ -153,6 +159,10 @@ class OKHttpTest : IMethodDefine {
             .build()
         synchronousCall(request)
     }
+
+    /**
+     * 上传文件
+     */
     @MyTestMark
     override fun postAFile() {
         val file = File("README.md")
@@ -165,6 +175,10 @@ class OKHttpTest : IMethodDefine {
             .build()
         synchronousCall(request)
     }
+
+    /**
+     * 提交单个表单数据
+     */
     @MyTestMark
     override fun postFormParametersData() {
         val formBody = FormBody.Builder()
@@ -179,6 +193,10 @@ class OKHttpTest : IMethodDefine {
             .build()
         synchronousCall(request)
     }
+
+    /**
+     * 上传多个FormDataPart的情况，如文字，和图片表格同时上传
+     */
     @MyTestMark
     override fun postMultipartRequest() {
         // Use the imgur image upload API as documented at https://api.imgur.com/endpoints/image
@@ -200,6 +218,9 @@ class OKHttpTest : IMethodDefine {
         synchronousCall(request)
     }
 
+    /**
+     * 授权认证测试
+     */
     @MyTestMark
     override fun handleAuthentication() {
         val request = Request.Builder()
@@ -232,10 +253,4 @@ class OKHttpTest : IMethodDefine {
     private val IMGUR_CLIENT_ID = "9199fdef135c122"
     private val MEDIA_TYPE_PNG = "image/webp".toMediaType()
 }
-
-
-@MustBeDocumented
-@Retention(AnnotationRetention.RUNTIME)
-@Target(AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER)
-annotation class MyTestMark
 

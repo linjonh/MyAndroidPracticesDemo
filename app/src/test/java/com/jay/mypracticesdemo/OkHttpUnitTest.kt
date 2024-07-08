@@ -9,7 +9,7 @@ import org.junit.Test
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
+class OkHttpUnitTest {
     @Test
     fun TestOkHttp() {
         val clazz = Class.forName(OKHttpTest::class.java.name)
@@ -30,5 +30,12 @@ class ExampleUnitTest {
                 }
             }
         }
+    }
+
+    @Test
+    fun zipArchive() {
+        val path = "E:\\DEV\\DevProject\\TestAIDL"
+        val pathDist = "D:\\zipFileTestAIDL.zip"
+        XZip.ZipFolder(path, pathDist)
     }
 }
