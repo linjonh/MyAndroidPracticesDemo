@@ -7,4 +7,4 @@ package com.jay.mypraticesdemon
 @MustBeDocumented
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER)
-annotation class MyTestMark
+annotation class MyTestableMark

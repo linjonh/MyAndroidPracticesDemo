@@ -1,5 +1,6 @@
 package com.jay.mypracticesdemo
 
+import android.app.ActionBar
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -20,6 +21,7 @@ class MainActivity : ComponentActivity() {
         const val TAG = "MainActivity"
     }
 
+    //获取viewModel的方式
     val viewModel = ViewModelProvider(this@MainActivity)[MyViewModel::class.java]
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -26,7 +26,7 @@ const val TestUrl = "http://www.baid.com"
 const val PostUrl = "https://api.github.com/markdown/raw"
 val MEDIA_TYPE_MARKDOWN = "text/x-markdown; charset=utf-8".toMediaType()
 
-class OKHttpTest : IMethodDefine {
+class OKHttpDemo : IMethodDefine {
     fun getOkhttpClient(): OkHttpClient {
         val okHttpClient = OkHttpClient()
         //http协议log拦截器
@@ -123,7 +123,7 @@ class OKHttpTest : IMethodDefine {
     /**
      * 传输一段markDown格式的字符串
      */
-    @MyTestMark
+    @MyTestableMark
     override fun postACharString() {
         val request = postRequest(PostUrl)
         synchronousCall(request)
@@ -132,7 +132,7 @@ class OKHttpTest : IMethodDefine {
     /**
      * 传输一个数据流
      */
-    @MyTestMark
+    @MyTestableMark
     override fun postStreaming() {
         val requestBody: RequestBody = object : RequestBody() {
             override fun contentType() = MEDIA_TYPE_MARKDOWN
@@ -163,7 +163,7 @@ class OKHttpTest : IMethodDefine {
     /**
      * 上传文件
      */
-    @MyTestMark
+    @MyTestableMark
     override fun postAFile() {
         val file = File("README.md")
         file.writeText("Test post a file Stream")
@@ -179,7 +179,7 @@ class OKHttpTest : IMethodDefine {
     /**
      * 提交单个表单数据
      */
-    @MyTestMark
+    @MyTestableMark
     override fun postFormParametersData() {
         val formBody = FormBody.Builder()
             .add("name", "lin")
@@ -197,7 +197,7 @@ class OKHttpTest : IMethodDefine {
     /**
      * 上传多个FormDataPart的情况，如文字，和图片表格同时上传
      */
-    @MyTestMark
+    @MyTestableMark
     override fun postMultipartRequest() {
         // Use the imgur image upload API as documented at https://api.imgur.com/endpoints/image
         val requestBody = MultipartBody.Builder()
@@ -221,7 +221,7 @@ class OKHttpTest : IMethodDefine {
     /**
      * 授权认证测试
      */
-    @MyTestMark
+    @MyTestableMark
     override fun handleAuthentication() {
         val request = Request.Builder()
             .url("http://publicobject.com/secrets/hellosecret.txt")

@@ -53,6 +53,9 @@ android {
             "src/main-Matrix/java",
             "src/main-MVVM/java",
             "src/main-Accessibility/java",
+            "src/main-KtConcurrent/java",
+            "src/main-Dagger2/java",
+            "src/main-SQLite3/java",
         )
     )
     sourceSets["main"].res.srcDir(
@@ -63,6 +66,9 @@ android {
             "src/main-Matrix/res",
             "src/main-MVVM/res",
             "src/main-Accessibility/res",
+            "src/main-KtConcurrent/res",
+            "src/main-Dagger2/res",
+            "src/main-SQLite3/res",
         )
     )
 }
@@ -81,6 +87,7 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

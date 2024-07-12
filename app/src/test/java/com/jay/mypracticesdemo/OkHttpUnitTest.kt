@@ -1,8 +1,8 @@
 package com.jay.mypracticesdemo
 
-import com.jay.mypraticesdemon.MyTestMark
-import com.jay.mypraticesdemon.OKHttpTest
-import com.jay.mypraticesdemon.RetrofitRestAPITest
+import com.jay.mypraticesdemon.MyTestableMark
+import com.jay.mypraticesdemon.OKHttpDemo
+import com.jay.mypraticesdemon.RetrofitRestAPIDemo
 import org.junit.Test
 
 /**
@@ -11,15 +11,15 @@ import org.junit.Test
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class OkHttpUnitTest {
-    private fun testClass(className:String) {
+    private fun testClass(className: String) {
         val clazz = Class.forName(className)
         val newInstance = clazz.getDeclaredConstructor().newInstance()
         clazz.declaredMethods.forEach { method ->
             println("=========>declaredMethod=[${method.name}] method.annotations=${method.declaredAnnotations.size}")
             method.annotations.forEach {
                 val simpleName = it.annotationClass.simpleName
-                println("annotation=$simpleName")
-                if (simpleName == MyTestMark::class.java.simpleName) {
+                println("annotation=$simpleName it=$it")
+                if (it is MyTestableMark) {
                     println("method.invoke=${method.name}")
                     try {
                         method.invoke(newInstance)
@@ -30,17 +30,19 @@ class OkHttpUnitTest {
             }
         }
     }
+
+    //测试okhttp
     @Test
     fun TestOkHttp() {
-        testClass(OKHttpTest::class.java.name)
+        testClass(OKHttpDemo::class.java.name)
     }
 
-
-
+    //测试retrofit
     @Test
-    fun testRetrofit(){
-       testClass(RetrofitRestAPITest::class.java.name)
+    fun testRetrofit() {
+        testClass(RetrofitRestAPIDemo::class.java.name)
     }
+
     @Test
     fun zipArchive() {
         val path = "E:\\DEV\\DevProject\\TestAIDL"
