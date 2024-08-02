@@ -71,6 +71,9 @@ android {
             "src/main-SQLite3/res",
         )
     )
+    buildFeatures{
+
+    }
 }
 
 dependencies {
