@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/talk_out_00140" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00141" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00142" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00143" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00144" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00145" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00146" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00147" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00148" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00149" android:duration="33" />
+
+    <item android:drawable="@drawable/talk_out_00150" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00151" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00152" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00153" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00154" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00155" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00156" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00157" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00158" android:duration="33" />
+    <item android:drawable="@drawable/talk_out_00159" android:duration="33" />
+
+    <item android:drawable="@drawable/talk_out_00160" android:duration="33" />
+
+</animation-list>

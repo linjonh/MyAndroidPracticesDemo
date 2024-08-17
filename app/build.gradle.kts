@@ -56,6 +56,7 @@ android {
             "src/main-KtConcurrent/java",
             "src/main-Dagger2/java",
             "src/main-SQLite3/java",
+            "src/main-composeUI/java",
         )
     )
     sourceSets["main"].res.srcDir(
@@ -69,6 +70,7 @@ android {
             "src/main-KtConcurrent/res",
             "src/main-Dagger2/res",
             "src/main-SQLite3/res",
+            "src/main-composeUI/res",
         )
     )
     buildFeatures{

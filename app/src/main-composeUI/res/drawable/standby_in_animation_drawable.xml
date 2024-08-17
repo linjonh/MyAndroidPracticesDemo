@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/standby_in_00040" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00041" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00042" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00043" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00044" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00045" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00046" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00047" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00048" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00049" android:duration="33" />
+
+    <item android:drawable="@drawable/standby_in_00050" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00051" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00052" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00053" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00054" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00055" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00056" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00057" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00058" android:duration="33" />
+    <item android:drawable="@drawable/standby_in_00059" android:duration="33" />
+
+    <item android:drawable="@drawable/standby_in_00060" android:duration="33" />
+
+</animation-list>

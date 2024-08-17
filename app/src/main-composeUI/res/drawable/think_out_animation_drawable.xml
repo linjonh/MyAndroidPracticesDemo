@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/think_out_00090" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00091" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00092" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00093" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00094" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00095" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00096" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00097" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00098" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00099" android:duration="33" />
+
+    <item android:drawable="@drawable/think_out_00100" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00101" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00102" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00103" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00104" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00105" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00106" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00107" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00108" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00109" android:duration="33" />
+
+    <item android:drawable="@drawable/think_out_00110" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00111" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00112" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00113" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00114" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00115" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00116" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00117" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00118" android:duration="33" />
+    <item android:drawable="@drawable/think_out_00119" android:duration="33" />
+
+
+</animation-list>
