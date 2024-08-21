@@ -4,6 +4,8 @@ import com.jay.mypraticesdemon.MyTestableMark
 import com.jay.mypraticesdemon.OKHttpDemo
 import com.jay.mypraticesdemon.RetrofitRestAPIDemo
 import org.junit.Test
+import java.io.File
+import java.text.SimpleDateFormat
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -43,10 +45,4 @@ class OkHttpUnitTest {
         testClass(RetrofitRestAPIDemo::class.java.name)
     }
 
-    @Test
-    fun zipArchive() {
-        val path = "E:\\DEV\\DevProject\\TestAIDL"
-        val pathDist = "D:\\zipFileTestAIDL.zip"
-        XZip.ZipFolder(path, pathDist)
-    }
 }
